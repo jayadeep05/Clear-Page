@@ -19,16 +19,19 @@ public class Summary {
     private String originalText;
 
     @Column(columnDefinition = "TEXT")
-    private String simplifiedExplanation;
+    private String coreExplanation;
 
     @Column(columnDefinition = "TEXT")
-    private String bulletPoints;
+    private String terminologyBreakdown;
 
     @Column(columnDefinition = "TEXT")
-    private String realLifeExample;
+    private String practicalUnderstanding;
 
     @Column(columnDefinition = "TEXT")
-    private String oneLineSummary;
+    private String clarifications;
+
+    @Column(columnDefinition = "TEXT")
+    private String mentalModel;
 
     private LocalDateTime createdAt = LocalDateTime.now();
 }

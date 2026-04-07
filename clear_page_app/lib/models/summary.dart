@@ -1,22 +1,25 @@
 class Summary {
-  final String simplifiedExplanation;
-  final String bulletPoints;
-  final String realLifeExample;
-  final String oneLineSummary;
+  final String coreExplanation;
+  final String terminologyBreakdown;
+  final String practicalUnderstanding;
+  final String clarifications;
+  final String mentalModel;
 
   Summary({
-    required this.simplifiedExplanation,
-    required this.bulletPoints,
-    required this.realLifeExample,
-    required this.oneLineSummary,
+    required this.coreExplanation,
+    required this.terminologyBreakdown,
+    required this.practicalUnderstanding,
+    required this.clarifications,
+    required this.mentalModel,
   });
 
   factory Summary.fromJson(Map<String, dynamic> json) {
     return Summary(
-      simplifiedExplanation: json['simplifiedExplanation'] ?? 'N/A',
-      bulletPoints: json['bulletPoints'] ?? 'N/A',
-      realLifeExample: json['realLifeExample'] ?? 'N/A',
-      oneLineSummary: json['oneLineSummary'] ?? 'N/A',
+      coreExplanation: json['coreExplanation'] ?? 'N/A',
+      terminologyBreakdown: json['terminologyBreakdown'] ?? 'N/A',
+      practicalUnderstanding: json['practicalUnderstanding'] ?? 'N/A',
+      clarifications: json['clarifications'] ?? 'N/A',
+      mentalModel: json['mentalModel'] ?? 'N/A',
     );
   }
 }
