@@ -12,10 +12,6 @@ Clear Page is an AI-powered book reading and study assistant. It helps users rea
 - Maven
 - MySQL Server
 
-### Database Setup:
-Create a MySQL database `clear_page` and ensure the credentials are:
-- User: `root`
-- Password: `#JAYA1708!!`
 
 ### Configure OpenAI API:
 Open `backend/src/main/resources/application.properties` and replace:
